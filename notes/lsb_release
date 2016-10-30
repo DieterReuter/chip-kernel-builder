@@ -1,0 +1,11 @@
+#!/bin/bash
+# Hypriot:
+#   this is a fake script to get Docker https://github.com/docker/docker/hack/install.sh working correctly for Debian/Jessie on the C.H.I.P. computer
+
+if [[ "$1" == "-a" ]]; then
+  exit 1
+fi
+
+###. /etc/os-release
+ID=Raspbian
+echo $ID
