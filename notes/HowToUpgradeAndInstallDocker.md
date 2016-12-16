@@ -18,12 +18,12 @@
 
 ## 1. Flash the latest available firmware
 
-Use a Chrome browser and flash the latest firmware and OS on your C.H.I.P. computer. For detailled instructions go to the appropriate web site at http://flash.getchip.com/. To run Docker on the C.H.I.P. you should use the OS image for `Debian Headless 4.4`.
+Use a Chrome browser and flash the latest firmware and OS on your C.H.I.P. computer. For detailed instructions go to the appropriate web site at http://flash.getchip.com/. To run Docker on the C.H.I.P. you should use the OS image for `Debian Headless 4.4`.
 
 
 ## 2. Connect to the C.H.I.P. via USB or UART console cable
 
-Once the C.H.I.P. is successfully flashed you can connect it directly with USB cable to a Mac or Linux machine. The C.H.I.P. is getting power over the USB cable and connects via an USB serial console driver, so you can easily connect to.
+Once the C.H.I.P. is successfully flashed you can connect it directly with USB cable to a Mac or Linux machine. The C.H.I.P. is getting power over the USB cable and connects via an USB serial console driver, so you can easily connect too.
 
 Let's find the booted C.H.I.P. on the USB wire:
 ```
@@ -56,9 +56,9 @@ root@chip:~#
 ```
 
 
-# 3. Configure WiFi connection
+## 3. Configure WiFi connection
 
-Following the instruction here http://docs.getchip.com/chip.html#wifi-connection you can list all the available WiFi networks and then connect the C.H.I.P. to your prefered network.
+Following the instructions here http://docs.getchip.com/chip.html#wifi-connection you can list all the available WiFi networks and then connect the C.H.I.P. to your prefered network.
 ```
 nmcli device wifi list
 *  SSID         MODE   CHAN  RATE       SIGNAL  BARS  SECURITY
@@ -125,8 +125,6 @@ Last login: Thu Jan  1 00:01:17 1970
 -bash: warning: setlocale: LC_ALL: cannot change locale (en_US.UTF-8)
 root@chip:~#
 ```
-```
-
 
 ## 5. Upgrade the Linux kernel to the HypriotOS version
 
@@ -136,6 +134,7 @@ scp 4.4.11+.tar.bz2 root@192.168.2.104:
 ```
 
 Login to the C.H.I.P. and install the new kernel package:
+
 ```
 ssh root@192.168.2.104
 tar xvf 4.4.11+.tar.bz2 -C /
